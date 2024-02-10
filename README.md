@@ -1,5 +1,9 @@
 # express-boilerplate
 
+```sh
+$ npm i express-node-gen
+```
+
 !NOTE Change the `init_dependencies` in package.json to `dependencies`.
 
 A Simple Express Boilerplate
@@ -20,3 +24,9 @@ Packages:
 12. cors
 13. dotenv
 14. express-validator
+
+```git
+https://github.com/FalakSingh/express-boilerplate.git
+```
+
+

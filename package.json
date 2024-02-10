@@ -1,6 +1,6 @@
 {
   "name": "express-node-gen",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple and beginner friendly express node boilerplate",
   "files": [
     "src",

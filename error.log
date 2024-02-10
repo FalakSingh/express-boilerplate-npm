@@ -36,3 +36,4 @@ error: Not found {"status":404}
 {"level":"error","message":"Email field is missing","status":400}
 {"level":"error","message":"Expected double-quoted property name in JSON at position 39 (line 4 column 1)","status":400}
 {"level":"error","message":"Password field is missing","status":400}
+{"level":"error","message":"Not found","status":404}

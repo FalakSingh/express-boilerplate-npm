@@ -1,15 +1,15 @@
 {
-  "name": "express",
+  "name": "express-node-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple and beginner friendly express node boilerplate",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "init": "npm i morgan mongoose express cors bcryptjs nodemon jsonwebtoken winston express-validator dotenv helmet compression express-mongo-sanitize xss-clean compression",
     "dev": "NODE_ENV=development nodemon ./src/index.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["express-boilerplate", "node-boilerplate", "express-node-boilerplate", "node-express-boilerplate"],
+  "author": "Falak Singh",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",

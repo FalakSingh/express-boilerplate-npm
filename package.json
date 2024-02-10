@@ -1,17 +1,33 @@
 {
-  "name": "express-node-boilerplate",
-  "version": "1.0.0",
+  "name": "express-node-gen",
+  "version": "1.0.2",
   "description": "Simple and beginner friendly express node boilerplate",
+  "files": [
+    "src",
+    "public",
+    "error.log",
+    "env",
+    ".gitignore",
+    ".npmignore"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FalakSingh/express-boilerplate.git"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "init": "npm i morgan mongoose express cors bcryptjs nodemon jsonwebtoken winston express-validator dotenv helmet compression express-mongo-sanitize xss-clean compression",
     "dev": "NODE_ENV=development nodemon ./src/index.js"
   },
-  "keywords": ["express-boilerplate", "node-boilerplate", "express-node-boilerplate", "node-express-boilerplate"],
+  "keywords": [
+    "express-boilerplate",
+    "node-boilerplate",
+    "express-node-boilerplate",
+    "node-express-boilerplate"
+  ],
   "author": "Falak Singh",
   "license": "ISC",
-  "dependencies": {
+  "init_dependencies": {
     "bcryptjs": "^2.4.3",
     "compression": "^1.7.4",
     "cors": "^2.8.5",
@@ -25,7 +41,6 @@
     "mongoose": "^8.1.1",
     "morgan": "^1.10.0",
     "nodemon": "^3.0.3",
-    "winston": "^3.11.0",
-    "xss-clean": "^0.1.4"
+    "winston": "^3.11.0"
   }
 }

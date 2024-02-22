@@ -1,7 +1,7 @@
 const router = require("express").Router();
-const userRoutes = require("./userauth.routes");
+const userRoutes = require("./user.routes");
 
-const routes = [{ path: "/user/auth", route: userRoutes }];
+const routes = [{ path: "/user", route: userRoutes }];
 
 routes?.forEach((route) => {
   router.use(route.path, route.route);

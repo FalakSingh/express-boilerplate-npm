@@ -1,14 +1,12 @@
-# express-boilerplate
+# Express Boilerplate
 
 ```sh
-$ npm i express-node-gen
+npm i express-node-boilerplate
 ```
+# Description
+A Simple Express Boilerplate with MongoDB as Database.
 
-!NOTE Change the `init_dependencies` in package.json to `dependencies`.
-
-A Simple Express Boilerplate
-
-Packages:
+# Packages:
 
 1. express
 2. mongoose
@@ -29,4 +27,15 @@ Packages:
 https://github.com/FalakSingh/express-boilerplate.git
 ```
 
+#Usage
 
+Simply go the server directory and run the following command. This will deploy the server in development mode.(Default PORT is 4000)
+
+```bash
+npm run dev
+```
+
+
+#Change Log
+
+1.0.2 : Using init.sh from bin to extract the boilerplate out of node_modules

@@ -5,9 +5,9 @@ const router = require("express").Router();
 
 router
   .route("/register")
-  .post(validate(validations.user.auth.register), userController.auth.register);
+  .post(validate(validations.user.auth.register), userController.register);
 router
   .route("/login")
-  .post(validate(validations.user.auth.login), userController.auth.login);
+  .post(validate(validations.user.auth.login), userController.login);
 
 module.exports = router;

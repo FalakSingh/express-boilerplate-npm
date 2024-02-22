@@ -6,3 +6,4 @@ const logger = require("./config/logger");
 app.listen(port, () =>
   logger.info("Server is up and running on PORT: " + port)
 );
+

@@ -1,8 +1,9 @@
 {
-  "name": "express-node-gen",
-  "version": "1.0.3",
+  "name": "express-node-boilerplate",
+  "version": "1.0.2",
   "description": "Simple and beginner friendly express node boilerplate",
   "files": [
+    "bin",
     "src",
     "public",
     "error.log",
@@ -17,17 +18,22 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "NODE_ENV=development nodemon ./src/index.js"
+    "dev": "NODE_ENV=development nodemon ./src/index.js",
+    "postinstall": "./bin/init.sh"
   },
   "keywords": [
-    "express-boilerplate",
+    "express-boilerplate",  
     "node-boilerplate",
     "express-node-boilerplate",
-    "node-express-boilerplate"
+    "node-express-boilerplate",
+    "boilerplate",
+    "node",
+    "express",
+    "mongoose-boilerplate"
   ],
   "author": "Falak Singh",
   "license": "ISC",
-  "init_dependencies": {
+  "dependencies": {
     "bcryptjs": "^2.4.3",
     "compression": "^1.7.4",
     "cors": "^2.8.5",

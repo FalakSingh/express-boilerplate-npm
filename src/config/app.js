@@ -6,14 +6,15 @@ const compression = require("compression");
 const cors = require("cors");
 const { ErrorRes } = require("../api/utils/reponseHandler");
 const { http_status, messages } = require("../api/constants/api.constants");
-const { errorConvertor, errorHandler } = require("../api/middlewares/error");
-const routes = require("../api/routes/v1");
+const { errorConvertor, errorHandler } = require("../api/middlewares/error.middleware");
 const path = require("path");
+const { env } = require("./envVars");
+const morgan = require("morgan");
 
 //Application Initialization
 const app = express();
 
-// set security HTTP headers      
+// set security HTTP headers
 app.use(helmet());
 
 // parse json request body
@@ -34,21 +35,18 @@ app.use(compression());
 // enable cors
 app.use(cors());
 
+//logs api calls
+app.use(morgan("dev"))
+
 //Routes
-app.use("/api/v1", routes);
+app.use(require("../api/routes"));
 
-
-//Not Found Page
-app.use(async (req, res, next) => {
-  next(new ErrorRes(http_status.not_found, messages.not_found));
-});
 
 //Converts express error to ErrorRes
 app.use(errorConvertor);
 
 //Handles ErrorRes errors
 app.use(errorHandler);
-
 
 //export
 module.exports = app;

@@ -39,3 +39,5 @@ npm run dev
 #Change Log
 
 1.0.2 : Using init.sh from bin to extract the boilerplate out of node_modules
+1.0.3 : Changed folder structure and files name and also deleting the init.sh
+1.0.4 : Added a middleware for jwt authorization

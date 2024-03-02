@@ -1,9 +1,7 @@
-const { port } = require("./config/envVars");
-require("./config/mongoConfig");
-const app = require("./config/app");
-const logger = require("./config/logger");
+require("./config/pre-start");
 
-app.listen(port, () =>
-  logger.info("Server is up and running on PORT: " + port)
-);
+const Server = require("./config/server");
 
+const server = new Server();
+
+server.start();

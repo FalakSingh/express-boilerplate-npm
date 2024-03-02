@@ -1,5 +1,5 @@
 const { messages } = require("../constants/api.constants");
-const User = require("../models/users");
+const User = require("../models/User.model");
 const { ErrorRes } = require("../utils/reponseHandler");
 const { generateOtp, deletePassword } = require("../utils/utility");
 

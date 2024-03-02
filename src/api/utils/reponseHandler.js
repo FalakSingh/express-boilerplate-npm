@@ -14,4 +14,3 @@ module.exports = {
       .json({ success: true, status_code: status, message, data }),
 };
 
-// module.exports = ErrorRes;

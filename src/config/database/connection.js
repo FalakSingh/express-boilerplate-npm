@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
-const logger = require("./logger");
-const { env, mongoURI } = require("./envVars");
+const logger = require("../logger");
+const { env, mongoURI } = require("../envVars");
+
 
 // Exit application on error
 mongoose.connection.on("error", (err) => {

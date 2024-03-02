@@ -1,15 +1,15 @@
 {
   "name": "express-node-boilerplate",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Simple and beginner friendly express node boilerplate",
   "files": [
     "bin",
     "src",
-    "public",
     "error.log",
-    "env",
     ".gitignore",
-    ".npmignore"
+    ".npmignore",
+    "package.json",
+    "package-lock.json"
   ],
   "repository": {
     "type": "git",
@@ -22,7 +22,7 @@
     "postinstall": "./bin/init.sh"
   },
   "keywords": [
-    "express-boilerplate",  
+    "express-boilerplate",
     "node-boilerplate",
     "express-node-boilerplate",
     "node-express-boilerplate",

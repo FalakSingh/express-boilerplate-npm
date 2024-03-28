@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/FalakSingh/express-boilerplate.git"
+    "url": "https://github.com/FalakSingh/express-boilerplate-npm.git"
   },
   "main": "index.js",
   "scripts": {

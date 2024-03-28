@@ -1,15 +1,22 @@
 #!/bin/bash
 
-set -e
+# Get the current directory path
+path=$(pwd)
 
-mkdir -p ../../server
+# Check if the path contains "node_modules"
+if [[ $path == *"node_modules"* ]]; then
+    
+    set -e
 
-shopt -s dotglob  
+    mkdir -p ../../server
 
-mv -f * ../../server 
+    shopt -s dotglob  
 
-cd ../../
+    mv -f * ../../server 
 
-mv -f ./node_modules ./server
+    cd ../../
 
-rm -f ./server/bin/init.sh
+    mv -f ./node_modules ./server
+
+    rm -f ./server/bin/init.sh
+fi  

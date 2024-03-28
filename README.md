@@ -24,7 +24,7 @@ A Simple Express Boilerplate with MongoDB as Database.
 14. express-validator
 
 ```git
-https://github.com/FalakSingh/express-boilerplate.git
+https://github.com/FalakSingh/express-boilerplate-npm.git
 ```
 
 #Usage
